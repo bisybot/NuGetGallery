@@ -12,7 +12,7 @@ using System.Web.UI;
 using Elmah;
 using Elmah.Contrib.Mvc;
 using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-using Microsoft.WindowsAzure.Diagnostics;
+//using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
 using Ninject;
 using Ninject.Web.Common;
@@ -112,7 +112,7 @@ namespace NuGetGallery
 
         private static void CloudPreStart()
         {
-            Trace.Listeners.Add(new DiagnosticMonitorTraceListener());
+            //Trace.Listeners.Add(new DiagnosticMonitorTraceListener());
         }
 
         private static void BundlingPostStart()
